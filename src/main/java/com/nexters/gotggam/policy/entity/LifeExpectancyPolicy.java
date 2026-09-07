@@ -30,7 +30,9 @@ public class LifeExpectancyPolicy extends BaseEntity {
     private BigDecimal femaleExpectancy;
 
     @Builder
-    private LifeExpectancyPolicy(BigDecimal maleExpectancy, BigDecimal femaleExpectancy) {
+    private LifeExpectancyPolicy(
+            BigDecimal maleExpectancy,
+            BigDecimal femaleExpectancy) {
         this.maleExpectancy = maleExpectancy;
         this.femaleExpectancy = femaleExpectancy;
     }
