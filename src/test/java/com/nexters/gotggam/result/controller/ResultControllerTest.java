@@ -141,7 +141,6 @@ class ResultControllerTest {
         persist(LifeExpectancyPolicy.builder()
             .maleExpectancy(new BigDecimal("80.00"))
             .femaleExpectancy(new BigDecimal("86.00"))
-            .minRemainingLife(new BigDecimal("20.00"))
             .build());
 
         persist(ageWeight(10, 19, "2.50", "3.00", "2.00"));

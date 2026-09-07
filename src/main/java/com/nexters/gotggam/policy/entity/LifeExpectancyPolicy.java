@@ -29,18 +29,12 @@ public class LifeExpectancyPolicy extends BaseEntity {
     @Column(name = "female_expectancy", nullable = false, precision = 5, scale = 2)
     private BigDecimal femaleExpectancy;
 
-    @Column(name = "min_remaining_life", nullable = false, precision = 5, scale = 2)
-    private BigDecimal minRemainingLife;
-
     @Builder
     private LifeExpectancyPolicy(
-        BigDecimal maleExpectancy,
-        BigDecimal femaleExpectancy,
-        BigDecimal minRemainingLife
-    ) {
+            BigDecimal maleExpectancy,
+            BigDecimal femaleExpectancy) {
         this.maleExpectancy = maleExpectancy;
         this.femaleExpectancy = femaleExpectancy;
-        this.minRemainingLife = minRemainingLife;
     }
 
 }
